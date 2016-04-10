@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'dashboard#index'
   resources :customers, only: [:index]
   resources :users
+  get 'angular_test', to: 'angular_test#index'
   get '/customer' => redirect('/customers')
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
