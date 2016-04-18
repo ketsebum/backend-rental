@@ -58,20 +58,7 @@ describe("CustomerSearchController", function() {
   describe("Error Handling", function() {
     var scope = null,
       controller = null,
-      httpBackend = null,
-      serverResults = [{
-        id: 123,
-        first_name: "Bob",
-        last_name: "Jones",
-        email: "bjones@foo.net",
-        username: "jonesy"
-      }, {
-        id: 456,
-        first_name: "Bob",
-        last_name: "Johnsons",
-        email: "johnboy@bar.info",
-        username: "bobbyj"
-      }];
+      httpBackend = null;
     beforeEach(module("customers"));
 
     beforeEach(inject(function($controller, $rootScope, $httpBackend) {
