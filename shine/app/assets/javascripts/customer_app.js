@@ -16,7 +16,7 @@ app.controller("CustomerSearchController", ["$scope", "$http",
       }).then(function(response) {
         $scope.customers = response.data;
       }, function(response) {
-        alert("there was a problem: " + response.status);
+        alert("There was a problem: " + response.status);
       });
       $scope.searchedFor = searchTerm;
     };
