@@ -6,11 +6,7 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/dcbang for more book information.
 #---
-class User < ActiveRecord::Base
-  devise :database_authenticatable, 
-         :registerable,
-         :recoverable, 
-         :rememberable, 
-         :trackable, 
-         :validatable
+class CustomersBillingAddress < ActiveRecord::Base
+  belongs_to :address
+  belongs_to :customer
 end

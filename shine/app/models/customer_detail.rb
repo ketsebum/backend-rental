@@ -6,11 +6,6 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/dcbang for more book information.
 #---
-class User < ActiveRecord::Base
-  devise :database_authenticatable, 
-         :registerable,
-         :recoverable, 
-         :rememberable, 
-         :trackable, 
-         :validatable
+class CustomerDetail < ActiveRecord::Base
+  self.primary_key = 'customer_id'
 end
